@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <!-- Theme: Simple -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css"
+  />
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      search: 'auto',
+      loadNavbar: false,
+      loadSidebar: true,
+      subMaxLevel: 2,
+      coverpage: true,
+
+      // plantuml
+      plantuml: {
+        skin: 'default',
+      },
+
+      // docsify-waline (defaults)
+      waline: {
+        serverURL: "https://document-comment-api-k3nd72dir-terminator-128.vercel.app",
+        docPath: "default: hash", // 对应 waline 的 path 参数
+      },
+
+      // search 完整配置参数
+      search: 'auto', // 默认值
+      search : [
+        '/',            // => /README.md
+        // '/guide',       // => /guide.md
+        // '/get-started', // => /get-started.md
+        // '/zh-cn/',      // => /zh-cn/README.md
+      ],
+      search: {
+      maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      paths: [], // or 'auto'
+      placeholder: 'Type to search',
+
+      // 支持本地化
+      placeholder: {
+        '/zh-cn/': '搜索',
+        '/': 'Type to search'
+      },
+
+      noData: 'No Results!',
+
+      // 支持本地化
+      noData: {
+        '/zh-cn/': '找不到结果',
+        '/': 'No Results'
+      },
+
+      // 搜索标题的最大层级, 1 - 6
+      depth: 2,
+
+      hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+
+      // 避免搜索索引冲突
+      // 同一域下的多个网站之间
+      namespace: 'website-1',
+
+      // 使用不同的索引作为路径前缀（namespaces）
+      // 注意：仅适用于 paths: 'auto' 模式
+      //
+      // 初始化索引时，我们从侧边栏查找第一个路径
+      // 如果它与列表中的前缀匹配，我们将切换到相应的索引
+      pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+
+      // 您可以提供一个正则表达式来匹配前缀。在这种情况下，
+      // 匹配到的字符串将被用来识别索引
+      pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
+    }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
+  <!-- CDN files for docsify-katex -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+  <!-- <script src='//unpkg.com/valine/dist/Valine.min.js'></script> -->
+  <!-- <script src='https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js'></script> -->
+  <!-- <script src="//unpkg.com/docsify-valine/dist/docsify-valine.min.js"></script> -->
+
+  <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-waline/docsify-waline.min.js"></script>
+
+</body>
+</html>
+
+<style>
+
+/* based on https://bestzuo.cn/posts/763113948.html */
+
+#waline-edit {
+	background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: rgba(255, 255, 255, 0);
+	resize: vertical
+}
+
+
+.veditor:hover {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, .12);
+  background-position-y: 200px;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+img.vuser {
+     transition: all 1s   /* 旋转时间为 1s */
+}
+
+img.vuser:hover {
+     transform: rotate(360deg);
+     -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+     -o-transform: rotate(360deg);
+     -ms-transform: rotate(360deg);
+}
+
+#vcomments .vcards .vcard {
+	padding: 15px 20px 0 20px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	box-shadow: 0 0 0px 0px rgba(0, 0, 0, .12);
+	transition: all .3s
+}
+
+#vcomments .vcards .vcard:hover {
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, .12)
+}
+
+#vcomments .vcards .vcard .vh .vcard {
+	border: none;
+	box-shadow: none;
+}
+
+
+a:link {text-decoration:none;}
+
+.cover-main h1{
+  color: white;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+
+</style>
