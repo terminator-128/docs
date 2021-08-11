@@ -6,7 +6,7 @@
 > 用来结构化整理知识点的笔记文档
 
 <a href="https://github.com/terminator-128" style="margin-right: 10px;">
-<img src="https://raw.githubusercontent.com/terminator-128/document/master/Assets/Github.svg" height="36px"/>
+<img src="https://raw.githubusercontent.com/terminator-128/document/master/Assets/GitHub.svg" height="36px"/>
 </a>
 
 <a href="https://gitlab.com/terminator-128" style="margin-right: 10px;">
