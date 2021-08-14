@@ -8,13 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
   <!-- Theme: Simple -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css"
-  />
+  <!-- themedocsify-themeable -->
+  <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css"/>
+  <!-- theme: vue.css -->
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
 </head>
 <body>
+
+  <!-- markmap is based on d3, so must load those files first. -->
+  <script src="//unpkg.com/d3@3/d3.min.js"></script> 
+  <script src="//unpkg.com/markmap@0.6.0/lib/d3-flextree.js"></script> 
+  <script src="//unpkg.com/markmap@0.6.0/lib/view.mindmap.js"></script> 
+
   <div id="app"></div>
+  
   <script>
     window.$docsify = {
       name: '',
@@ -28,6 +35,21 @@
       // plantuml
       plantuml: {
         skin: 'default',
+      },
+
+      // mindmap
+      mindmap: {
+        preset: 'colorful', // or default
+        linkShape: 'diagonal' // or bracket
+      },
+
+      // tabs
+      tabs: {
+        persist    : true,      // default
+        sync       : true,      // default
+        theme      : 'classic', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
       },
 
       // docsify-waline (defaults)
@@ -108,6 +130,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-waline/docsify-waline.min.js"></script>
 
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify-mindmap/dist/docsify-mindmap.min.js"></script>
 </body>
 </html>
 

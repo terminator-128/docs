@@ -2,5 +2,5 @@
 * [序言](/Notes/ComputerOrganization/README)
 * [章首](/Notes/ComputerOrganization/C_0/README)
 * [0. 计算机发展历程※](/Notes/ComputerOrganization/C_0/计算机发展历程※)
-* [1. 计算机网络体系结构](/Notes/ComputerOrganization/C_0/计算机系统的基本组成与层级结构)
-* [2. 计算机网络性能指标](/Notes/ComputerOrganization/C_0/计算机系统的性能指标)
+* [1. 计算机系统的基本组成与层次结构](/Notes/ComputerOrganization/C_0/计算机系统的基本组成与层次结构)
+* [2. 计算机系统的性能指标](/Notes/ComputerOrganization/C_0/计算机系统的性能指标)
