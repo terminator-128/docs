@@ -6,10 +6,10 @@
 
 此外，非常欢迎友友们**共同撰写笔记文档**，会将参与撰写的作者姓名或昵称置顶。虽说我不会大力去宣传文档本站，但在浩瀚互联网的犄角旮旯里能被你找到我感到很幸运！
 
-<br>
+<br />
 
 ## 📈 Page View
 
-<img src="https://count.getloli.com/get/@CXY-document?theme=rule34">
+![](https://count.getloli.com/get/@CXY-document?theme=rule34)
 
 <br><br>

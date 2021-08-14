@@ -1,7 +1,7 @@
 * [首页](/README)
 * [序言](/Notes/ComputerNetwork/README)
 * [章首](/Notes/ComputerNetwork/C_0/README)
-* [0. 计算机网络定义与分类](/Notes/ComputerNetwork/C_0/0.计算机网络定义与分类.md)
+* [0. 计算机网络定义与分类](/Notes/ComputerNetwork/C_0/0.计算机网络定义与分类)
 * [1. 计算机网络体系结构](/Notes/ComputerNetwork/C_0/1.计算机网络体系结构)
 * [2. 计算机网络性能指标](/Notes/ComputerNetwork/C_0/2.计算机网络性能指标)
 * [3. 网络标准化工作及相关组织](/Notes/ComputerNetwork/C_0/3.网络标准化工作及相关组织)

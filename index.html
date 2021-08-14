@@ -36,6 +36,13 @@
         docPath: "default: hash", // 对应 waline 的 path 参数
       },
 
+      pagination: {
+        previousText: 'PREV',
+        nextText: 'NEXT',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+
       // search 完整配置参数
       search: 'auto', // 默认值
       search : [
@@ -100,6 +107,7 @@
   <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-waline/docsify-waline.min.js"></script>
 
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 </html>
 
